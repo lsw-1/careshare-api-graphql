@@ -1,0 +1,23 @@
+{
+  "name": "egraph",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon node ./src",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "graphql-yoga": "^1.6.1",
+    "mysql": "^2.15.0",
+    "mysql2": "^1.5.3",
+    "promise-mysql": "^3.2.1",
+    "sequelize": "^4.37.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.2"
+  }
+}

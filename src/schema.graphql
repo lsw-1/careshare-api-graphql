@@ -1,0 +1,29 @@
+type User {
+  id: ID!
+  name: String!
+  age: Int
+}
+
+type Route {
+  id: ID!
+  description: String!
+  toLongitude: Float!
+  toLatitude: Float!
+  fromLongitude: Float!
+  fromLatitude: Float!
+}
+
+type Query {
+  routes: [Route]
+  aRoute(id: ID!): Route
+}
+
+type Mutation {
+  createRoute(
+    description: String!
+    toLongitude: Float!
+    toLatitude: Float!
+    fromLongitude: Float!
+    fromLatitude: Float!
+  ): Route
+}
